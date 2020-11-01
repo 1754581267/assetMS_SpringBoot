@@ -1,0 +1,17 @@
+2020-10-18 19:09:31.398 [main] DEBUG bao.xy.Application - Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-10-18 19:09:50.105 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==>  Preparing: update product set unit_price=? where ( 1=? )
+2020-10-18 19:09:50.521 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==> Parameters: unit_price + 100(String), 1(String)
+2020-10-18 19:10:00.004 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==>  Preparing: update product set unit_price=? where ( 1=? )
+2020-10-18 19:10:00.005 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==> Parameters: unit_price + 100(String), 1(String)
+2020-10-18 19:10:10.003 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==>  Preparing: update product set unit_price=? where ( 1=? )
+2020-10-18 19:10:10.004 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==> Parameters: unit_price + 100(String), 1(String)
+2020-10-18 19:10:20.003 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==>  Preparing: update product set unit_price=? where ( 1=? )
+2020-10-18 19:10:20.004 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==> Parameters: unit_price + 100(String), 1(String)
+2020-10-18 19:10:30.001 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==>  Preparing: update product set unit_price=? where ( 1=? )
+2020-10-18 19:10:30.002 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updt - ==> Parameters: unit_price + 100(String), 1(String)
+2020-10-18 19:56:33.859 [main] DEBUG bao.xy.Application - Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-10-18 19:57:51.569 [main] DEBUG bao.xy.Application - Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-10-18 19:58:30.174 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updtall - ==>  Preparing: update product set unit_price=?)
+2020-10-18 19:58:40.015 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updtall - ==>  Preparing: update product set unit_price=?)
+2020-10-18 19:58:50.016 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updtall - ==>  Preparing: update product set unit_price=?)
+2020-10-18 19:59:00.008 [scheduling-1] DEBUG bao.xy.dao.JdbcUtilsMapper.updtall - ==>  Preparing: update product set unit_price=?)

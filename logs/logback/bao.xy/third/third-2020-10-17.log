@@ -1,0 +1,341 @@
+2020-10-17 22:07:41.069 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.20.Final
+2020-10-17 22:07:43.597 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:07:43.614 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:07:43.706 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84ms. Found 1 Elasticsearch repository interfaces.
+2020-10-17 22:07:43.711 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:07:43.712 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:07:43.721 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-17 22:07:43.779 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:07:43.782 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-17 22:07:43.814 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bao.xy.elasticsearch.EsNotesRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-10-17 22:07:43.815 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-10-17 22:07:44.934 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-10-17 22:07:44.950 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-17 22:07:44.952 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-17 22:07:44.952 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-17 22:07:45.164 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-17 22:07:45.165 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3440 ms
+2020-10-17 22:07:45.640 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-10-17 22:07:46.888 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-10-17 22:07:49.947 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'esFind': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'elasticsearchTemplate' is expected to be of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' but was actually of type 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate'
+2020-10-17 22:07:50.011 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2020-10-17 22:07:50.018 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-10-17 22:07:50.021 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-10-17 22:07:50.034 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-17 22:07:50.105 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'esFind': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'elasticsearchTemplate' is expected to be of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' but was actually of type 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at bao.xy.Application.main(Application.java:10)
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'elasticsearchTemplate' is expected to be of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' but was actually of type 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:399)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:453)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:527)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:239)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+2020-10-17 22:08:06.226 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.20.Final
+2020-10-17 22:08:09.466 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:08:09.472 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:08:09.647 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 159ms. Found 1 Elasticsearch repository interfaces.
+2020-10-17 22:08:09.656 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:08:09.658 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:08:09.678 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-17 22:08:09.720 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:08:09.726 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-17 22:08:09.818 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bao.xy.elasticsearch.EsNotesRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-10-17 22:08:09.818 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 36ms. Found 0 Redis repository interfaces.
+2020-10-17 22:08:11.265 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-10-17 22:08:11.282 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-17 22:08:11.283 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-17 22:08:11.284 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-17 22:08:11.458 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-17 22:08:11.459 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4980 ms
+2020-10-17 22:08:11.717 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-10-17 22:08:12.347 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-10-17 22:08:14.008 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'esFind': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'elasticsearchTemplate' is expected to be of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' but was actually of type 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate'
+2020-10-17 22:08:14.030 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2020-10-17 22:08:14.036 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-10-17 22:08:14.040 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-10-17 22:08:14.052 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-17 22:08:14.061 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'esFind': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'elasticsearchTemplate' is expected to be of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' but was actually of type 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate'
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:321)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at bao.xy.Application.main(Application.java:10)
+Caused by: org.springframework.beans.factory.BeanNotOfRequiredTypeException: Bean named 'elasticsearchTemplate' is expected to be of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' but was actually of type 'org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate'
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:399)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:453)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:527)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:497)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:650)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:239)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:318)
+	... 17 common frames omitted
+2020-10-17 22:09:33.411 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.20.Final
+2020-10-17 22:09:34.859 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:09:34.862 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:09:34.940 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73ms. Found 1 Elasticsearch repository interfaces.
+2020-10-17 22:09:34.947 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:09:34.948 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:09:34.959 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-17 22:09:34.978 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:09:34.980 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-17 22:09:35.002 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bao.xy.elasticsearch.EsNotesRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-10-17 22:09:35.002 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-10-17 22:09:35.609 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-10-17 22:09:35.617 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-17 22:09:35.618 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-17 22:09:35.619 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-17 22:09:35.723 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-17 22:09:35.723 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2188 ms
+2020-10-17 22:09:35.835 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-10-17 22:09:36.195 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-10-17 22:09:37.146 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-17 22:09:37.235 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2020-10-17 22:09:37.446 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-17 22:09:39.718 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'esNotesRep': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@4792f119
+2020-10-17 22:09:39.724 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-17 22:09:39.741 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2020-10-17 22:09:39.747 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-10-17 22:09:39.748 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-10-17 22:09:39.759 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-17 22:09:39.768 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'esNotesRep': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@4792f119
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at bao.xy.Application.main(Application.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@4792f119
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 16 common frames omitted
+Caused by: org.springframework.data.elasticsearch.ElasticsearchException: Error while for indexExists request: org.elasticsearch.action.admin.indices.get.GetIndexRequest@4792f119
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.indexExists(ElasticsearchRestTemplate.java:848)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndexIfNotCreated(ElasticsearchRestTemplate.java:1225)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.createIndex(ElasticsearchRestTemplate.java:257)
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.createIndex(AbstractElasticsearchRepository.java:99)
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:89)
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:39)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 29 common frames omitted
+Caused by: java.net.ConnectException: Timeout connecting to [localhost/127.0.0.1:9200]
+	at org.elasticsearch.client.RestClient$SyncResponseListener.get(RestClient.java:959)
+	at org.elasticsearch.client.RestClient.performRequest(RestClient.java:233)
+	at org.elasticsearch.client.RestHighLevelClient.internalPerformRequest(RestHighLevelClient.java:1764)
+	at org.elasticsearch.client.RestHighLevelClient.performRequest(RestHighLevelClient.java:1734)
+	at org.elasticsearch.client.IndicesClient.exists(IndicesClient.java:1109)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.indexExists(ElasticsearchRestTemplate.java:846)
+	... 39 common frames omitted
+Caused by: java.net.ConnectException: Timeout connecting to [localhost/127.0.0.1:9200]
+	at org.apache.http.nio.pool.RouteSpecificPool.timeout(RouteSpecificPool.java:169)
+	at org.apache.http.nio.pool.AbstractNIOConnPool.requestTimeout(AbstractNIOConnPool.java:632)
+	at org.apache.http.nio.pool.AbstractNIOConnPool$InternalSessionRequestCallback.timeout(AbstractNIOConnPool.java:898)
+	at org.apache.http.impl.nio.reactor.SessionRequestImpl.timeout(SessionRequestImpl.java:198)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processTimeouts(DefaultConnectingIOReactor.java:213)
+	at org.apache.http.impl.nio.reactor.DefaultConnectingIOReactor.processEvents(DefaultConnectingIOReactor.java:158)
+	at org.apache.http.impl.nio.reactor.AbstractMultiworkerIOReactor.execute(AbstractMultiworkerIOReactor.java:351)
+	at org.apache.http.impl.nio.conn.PoolingNHttpClientConnectionManager.execute(PoolingNHttpClientConnectionManager.java:221)
+	at org.apache.http.impl.nio.client.CloseableHttpAsyncClientBase$1.run(CloseableHttpAsyncClientBase.java:64)
+	at java.lang.Thread.run(Thread.java:748)
+2020-10-17 22:10:28.129 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.20.Final
+2020-10-17 22:10:29.174 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:10:29.176 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:10:29.236 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56ms. Found 1 Elasticsearch repository interfaces.
+2020-10-17 22:10:29.243 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:10:29.243 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:10:29.250 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface bao.xy.elasticsearch.EsNotesRep. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2020-10-17 22:10:29.250 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-17 22:10:29.263 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:10:29.265 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-17 22:10:29.281 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface bao.xy.elasticsearch.EsNotesRep. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-10-17 22:10:29.281 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 Redis repository interfaces.
+2020-10-17 22:10:29.812 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-10-17 22:10:29.820 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-17 22:10:29.821 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-17 22:10:29.821 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-17 22:10:29.914 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-17 22:10:29.914 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1664 ms
+2020-10-17 22:10:30.021 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-10-17 22:10:30.369 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-10-17 22:10:31.139 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-17 22:10:31.200 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2020-10-17 22:10:31.261 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-17 22:10:32.075 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'esNotesRep': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Unable to identify index name. Notes is not a Document. Make sure the document class is annotated with @Document(indexName="foo")
+2020-10-17 22:10:32.080 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-10-17 22:10:32.094 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2020-10-17 22:10:32.099 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2020-10-17 22:10:32.101 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2020-10-17 22:10:32.111 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-17 22:10:32.119 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'esNotesRep': Invocation of init method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Unable to identify index name. Notes is not a Document. Make sure the document class is annotated with @Document(indexName="foo")
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at bao.xy.Application.main(Application.java:10)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository]: Constructor threw exception; nested exception is java.lang.IllegalArgumentException: Unable to identify index name. Notes is not a Document. Make sure the document class is annotated with @Document(indexName="foo")
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.lambda$getTargetRepositoryViaReflection$3(RepositoryFactorySupport.java:521)
+	at java.util.Optional.map(Optional.java:215)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:521)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getTargetRepositoryViaReflection(RepositoryFactorySupport.java:506)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactory.getTargetRepository(ElasticsearchRepositoryFactory.java:72)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:312)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:297)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:212)
+	at org.springframework.data.util.Lazy.get(Lazy.java:94)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:300)
+	at org.springframework.data.elasticsearch.repository.support.ElasticsearchRepositoryFactoryBean.afterPropertiesSet(ElasticsearchRepositoryFactoryBean.java:67)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 16 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Unable to identify index name. Notes is not a Document. Make sure the document class is annotated with @Document(indexName="foo")
+	at org.springframework.util.Assert.isTrue(Assert.java:121)
+	at org.springframework.data.elasticsearch.core.ElasticsearchRestTemplate.getPersistentEntityFor(ElasticsearchRestTemplate.java:1543)
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.createIndexAndMapping(AbstractElasticsearchRepository.java:109)
+	at org.springframework.data.elasticsearch.repository.support.AbstractElasticsearchRepository.<init>(AbstractElasticsearchRepository.java:88)
+	at org.springframework.data.elasticsearch.repository.support.SimpleElasticsearchRepository.<init>(SimpleElasticsearchRepository.java:39)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 29 common frames omitted
+2020-10-17 22:11:07.279 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.20.Final
+2020-10-17 22:11:08.440 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:11:08.442 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:11:08.457 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 Elasticsearch repository interfaces.
+2020-10-17 22:11:08.462 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:11:08.463 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:11:08.468 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-17 22:11:08.482 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:11:08.484 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-17 22:11:08.498 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2020-10-17 22:11:09.065 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-10-17 22:11:09.073 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-17 22:11:09.075 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-17 22:11:09.075 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-17 22:11:09.173 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-17 22:11:09.173 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1750 ms
+2020-10-17 22:11:09.277 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-10-17 22:11:09.634 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-10-17 22:11:10.515 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-17 22:11:10.579 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2020-10-17 22:11:10.640 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-17 22:11:11.867 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-10-17 22:11:11.912 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2020-10-17 22:11:22.890 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-17 22:11:22.890 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-17 22:11:22.901 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2020-10-17 22:13:16.740 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.0.20.Final
+2020-10-17 22:13:18.085 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:13:18.088 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:13:18.118 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 Elasticsearch repository interfaces.
+2020-10-17 22:13:18.126 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:13:18.126 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2020-10-17 22:13:18.133 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2020-10-17 22:13:18.149 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-10-17 22:13:18.150 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-10-17 22:13:18.170 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2020-10-17 22:13:18.833 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2020-10-17 22:13:18.843 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2020-10-17 22:13:18.844 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2020-10-17 22:13:18.844 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2020-10-17 22:13:18.991 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-10-17 22:13:18.991 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2078 ms
+2020-10-17 22:13:19.165 [main] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2020-10-17 22:13:19.612 [main] INFO  c.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2020-10-17 22:13:20.545 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-17 22:13:20.628 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2020-10-17 22:13:20.701 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2020-10-17 22:13:21.748 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2020-10-17 22:13:21.766 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2020-10-17 22:13:31.695 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-17 22:13:31.695 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-10-17 22:13:31.706 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms

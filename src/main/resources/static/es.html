@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>es 资产搜索</title>
+
+    <link href="./plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/current.css" rel="stylesheet">
+    <style>
+        .lh>tbody>tr>td {
+            line-height: 33px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="panel panel-default">
+        <div class="panel-heading">资产搜索界面</div>
+        <div class="panel-body">
+            <div class="form-inline">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-addon">类别:</div>
+                        <input type="text" class="form-control" placeholder="请输入资产类别" v-model="assetClass">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary" @click="find()">
+                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    搜索
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="show">
+        <table class="table table-hover table-bordered lh" >
+            <tr>
+                <th>编号</th>
+                <th>分类</th>
+                <th>财务编号</th>
+                <th>产品编号</th>
+                <th>保管人编号</th>
+                <th>状态</th>
+            </tr>
+            <tr v-for="li in dataList">
+                <td>{{li.id}}</td>
+                <td>{{li.title}}</td>
+                <td>{{li.financeId}}</td>
+                <td>{{li.productId}}</td>
+                <td>{{li.careStaffId}}</td>
+                <td>{{li.state}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<script src="./plugins/jq/jquery.min.js"></script>
+<script src="./plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script src="./plugins/layer/layer.js"></script>
+<script src="./plugins/vue/vue.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/current.js"></script>
+<script src="./js/es.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="bao.xy.dao.AssetsMapper">
+
+    <insert id="add" keyProperty="asset.id" useGeneratedKeys="true">
+        INSERT INTO assets (asset_class, finance_id, product_id, care_staff_id, state)
+        VALUES (#{asset.assetClass}, #{asset.financeId}, #{asset.productId}, #{asset.careStaffId}, #{asset.state})
+    </insert>
+
+    <update id="updt">
+        update assets
+        set asset_class=#{asset.assetClass}, finance_id=#{asset.financeId}, product_id=#{asset.productId}, care_staff_id=#{asset.careStaffId}, state=#{asset.state}
+        where ( id = #{asset.id} )
+    </update>
+
+    <select id="paging" resultMap="assetResultMap">
+        SELECT * FROM assets t1 <include refid="whereSql"></include>
+    </select>
+
+    <select id="listCount" resultType="java.lang.Integer">
+        SELECT count(*) FROM assets t1 <include refid="whereSql"></include>
+    </select>
+
+    <resultMap id="assetResultMap" type="bao.xy.model.Asset">
+        <result column="asset_class" property="assetClass"></result>
+        <result column="finance_id" property="financeId"></result>
+        <result column="product_id" property="productId"></result>
+        <result column="care_staff_id" property="careStaffId"></result>
+    </resultMap>
+
+    <sql id="whereSql">
+        <where>
+            <if test="assetClass != null and assetClass != ''">
+                AND t1.asset_class LIKE CONCAT('%', #{assetClass}, '%')
+            </if>
+            <if test="state != null and state != ''">
+                AND t1.state LIKE CONCAT('%', #{state}, '%')
+            </if>
+        </where>
+    </sql>
+
+
+</mapper>

@@ -1,0 +1,23 @@
+2020-10-13 20:52:24.954 [main] DEBUG bao.xy.Application - Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-10-13 20:53:09.416 [http-nio-8888-exec-6] DEBUG bao.xy.dao.LoginMapper.login - ==>  Preparing: SELECT * FROM staff where ( user_name=? )
+2020-10-13 20:53:09.468 [http-nio-8888-exec-6] DEBUG bao.xy.dao.LoginMapper.login - ==> Parameters: 李四(String)
+2020-10-13 20:53:09.499 [http-nio-8888-exec-6] DEBUG bao.xy.dao.LoginMapper.login - <==      Total: 1
+2020-10-13 20:53:12.397 [http-nio-8888-exec-9] DEBUG bao.xy.dao.DetailMapper.listCount - ==>  Preparing: select count(*) from assets a1 inner join finance f1 on a1.finance_id=f1.id inner join product p1 on a1.product_id=p1.id inner join staff s1 on a1.care_staff_id=s1.id order by a1.id
+2020-10-13 20:53:12.399 [http-nio-8888-exec-9] DEBUG bao.xy.dao.DetailMapper.listCount - ==> Parameters: 
+2020-10-13 20:53:12.497 [http-nio-8888-exec-9] DEBUG bao.xy.dao.DetailMapper.listCount - <==      Total: 1
+2020-10-13 20:53:12.500 [http-nio-8888-exec-9] DEBUG bao.xy.dao.DetailMapper.paging - ==>  Preparing: select a1.id aid, a1.asset_class, a1.state astate, f1.id fid, proof, entry_date, p1.id pid, p1.name pname, p1.*, s1.name sname from assets a1 inner join finance f1 on a1.finance_id=f1.id inner join product p1 on a1.product_id=p1.id inner join staff s1 on a1.care_staff_id=s1.id order by a1.id
+2020-10-13 20:53:12.500 [http-nio-8888-exec-9] DEBUG bao.xy.dao.DetailMapper.paging - ==> Parameters: 
+2020-10-13 20:53:12.504 [http-nio-8888-exec-9] DEBUG bao.xy.dao.DetailMapper.paging - <==      Total: 4
+2020-10-13 20:54:03.670 [http-nio-8888-exec-7] DEBUG bao.xy.dao.LoginMapper.login - ==>  Preparing: SELECT * FROM staff where ( user_name=? )
+2020-10-13 20:54:03.670 [http-nio-8888-exec-7] DEBUG bao.xy.dao.LoginMapper.login - ==> Parameters: 李四(String)
+2020-10-13 20:54:03.671 [http-nio-8888-exec-7] DEBUG bao.xy.dao.LoginMapper.login - <==      Total: 1
+2020-10-13 20:55:53.529 [main] DEBUG bao.xy.Application - Running with Spring Boot v2.2.10.RELEASE, Spring v5.2.9.RELEASE
+2020-10-13 20:56:09.611 [http-nio-8888-exec-6] DEBUG bao.xy.dao.LoginMapper.login - ==>  Preparing: SELECT * FROM staff where ( user_name=? )
+2020-10-13 20:56:09.631 [http-nio-8888-exec-6] DEBUG bao.xy.dao.LoginMapper.login - ==> Parameters: 李四(String)
+2020-10-13 20:56:09.650 [http-nio-8888-exec-6] DEBUG bao.xy.dao.LoginMapper.login - <==      Total: 1
+2020-10-13 20:56:11.973 [http-nio-8888-exec-1] DEBUG bao.xy.dao.DetailMapper.listCount - ==>  Preparing: select count(*) from assets a1 inner join finance f1 on a1.finance_id=f1.id inner join product p1 on a1.product_id=p1.id inner join staff s1 on a1.care_staff_id=s1.id order by a1.id
+2020-10-13 20:56:11.973 [http-nio-8888-exec-1] DEBUG bao.xy.dao.DetailMapper.listCount - ==> Parameters: 
+2020-10-13 20:56:11.975 [http-nio-8888-exec-1] DEBUG bao.xy.dao.DetailMapper.listCount - <==      Total: 1
+2020-10-13 20:56:11.978 [http-nio-8888-exec-1] DEBUG bao.xy.dao.DetailMapper.paging - ==>  Preparing: select a1.id aid, a1.asset_class, a1.state astate, f1.id fid, proof, entry_date, p1.id pid, p1.name pname, p1.*, s1.name sname from assets a1 inner join finance f1 on a1.finance_id=f1.id inner join product p1 on a1.product_id=p1.id inner join staff s1 on a1.care_staff_id=s1.id order by a1.id
+2020-10-13 20:56:11.978 [http-nio-8888-exec-1] DEBUG bao.xy.dao.DetailMapper.paging - ==> Parameters: 
+2020-10-13 20:56:11.981 [http-nio-8888-exec-1] DEBUG bao.xy.dao.DetailMapper.paging - <==      Total: 4

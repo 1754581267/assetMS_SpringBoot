@@ -1,0 +1,3 @@
+2020-11-01 12:32:51.526 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 5144 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-11-01 12:32:51.528 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-11-01 12:33:03.029 [main] INFO  bao.xy.Application - Started Application in 14.219 seconds (JVM running for 18.537)

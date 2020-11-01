@@ -1,0 +1,49 @@
+2020-10-15 16:32:51.982 [main] INFO  bao.xy.ApplicationTests - Starting ApplicationTests on DESKTOP-E4PFTSG with PID 5308 (started by 17545 in D:\Javawork\springBoot)
+2020-10-15 16:32:51.983 [main] INFO  bao.xy.ApplicationTests - No active profile set, falling back to default profiles: default
+2020-10-15 16:33:04.916 [main] INFO  bao.xy.ApplicationTests - Started ApplicationTests in 13.963 seconds (JVM running for 16.244)
+2020-10-15 16:36:29.944 [main] INFO  bao.xy.ApplicationTests - Starting ApplicationTests on DESKTOP-E4PFTSG with PID 17208 (started by 17545 in D:\Javawork\springBoot)
+2020-10-15 16:36:29.962 [main] INFO  bao.xy.ApplicationTests - No active profile set, falling back to default profiles: default
+2020-10-15 16:36:43.432 [main] INFO  bao.xy.ApplicationTests - Starting ApplicationTests on DESKTOP-E4PFTSG with PID 10120 (started by 17545 in D:\Javawork\springBoot)
+2020-10-15 16:36:43.435 [main] INFO  bao.xy.ApplicationTests - No active profile set, falling back to default profiles: default
+2020-10-15 16:36:50.467 [main] INFO  bao.xy.ApplicationTests - Started ApplicationTests in 21.67 seconds (JVM running for 27.587)
+2020-10-15 16:37:08.111 [main] INFO  bao.xy.ApplicationTests - Started ApplicationTests in 26.659 seconds (JVM running for 29.581)
+2020-10-15 21:56:24.140 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 13020 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 21:56:24.160 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 21:58:11.390 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 27432 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 21:58:11.392 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 21:58:29.696 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 35436 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 21:58:29.698 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:00:46.857 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 35100 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:00:46.861 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:03:19.003 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 13980 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:03:19.005 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:08:39.773 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 36564 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:08:39.804 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:09:09.430 [main] INFO  bao.xy.Application - Started Application in 30.879 seconds (JVM running for 34.024)
+2020-10-15 22:10:13.760 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 36452 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:10:13.762 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:10:25.247 [main] INFO  bao.xy.Application - Started Application in 12.569 seconds (JVM running for 15.091)
+2020-10-15 22:13:11.884 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 36112 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:13:11.887 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:13:21.865 [main] INFO  bao.xy.Application - Started Application in 11.184 seconds (JVM running for 13.292)
+2020-10-15 22:14:40.538 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 35920 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:14:40.540 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:14:51.168 [main] INFO  bao.xy.Application - Started Application in 11.622 seconds (JVM running for 13.185)
+2020-10-15 22:43:40.136 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 33708 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:43:40.137 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:43:49.212 [main] INFO  bao.xy.Application - Started Application in 10.472 seconds (JVM running for 13.157)
+2020-10-15 22:49:27.247 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 41400 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:49:27.248 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:49:38.957 [main] INFO  bao.xy.Application - Started Application in 13.097 seconds (JVM running for 16.897)
+2020-10-15 22:54:01.652 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 39132 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:54:01.654 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:54:09.723 [main] INFO  bao.xy.Application - Started Application in 8.989 seconds (JVM running for 10.715)
+2020-10-15 22:55:41.769 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 41788 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:55:41.770 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:55:49.561 [main] INFO  bao.xy.Application - Started Application in 8.684 seconds (JVM running for 10.412)
+2020-10-15 22:57:57.867 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 42608 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:57:57.871 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:58:06.143 [main] INFO  bao.xy.Application - Started Application in 9.15 seconds (JVM running for 10.641)
+2020-10-15 22:58:45.577 [main] INFO  bao.xy.Application - Starting Application on DESKTOP-E4PFTSG with PID 39152 (D:\Javawork\springBoot\target\classes started by 17545 in D:\Javawork\springBoot)
+2020-10-15 22:58:45.579 [main] INFO  bao.xy.Application - No active profile set, falling back to default profiles: default
+2020-10-15 22:58:53.604 [main] INFO  bao.xy.Application - Started Application in 8.893 seconds (JVM running for 10.541)
