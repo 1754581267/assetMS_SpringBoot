@@ -11,7 +11,6 @@ import org.springframework.http.HttpStatus;
  */
 public class ErrPage implements ErrorPageRegistrar {
 
-
     @Override
     public void registerErrorPages(ErrorPageRegistry registry) {
         ErrorPage errorPage400 = new ErrorPage(HttpStatus.BAD_REQUEST, "/error/404.html");

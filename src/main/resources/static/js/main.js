@@ -53,7 +53,7 @@ var cha = new Vue({
 	},
 	methods:{
 		inputpwd1 : function() {
-			if (this.pwd1 == "") {
+			if (this.pwd1 === "") {
 			    $("#pwd1").html("<strong style=\"color: red\">  不能为空</strong>");
 			    this.f1 = 0;
 			} else {
@@ -66,10 +66,10 @@ var cha = new Vue({
 			        },
 			        dataType : "JSON",
 			        success : function (data) {
-			            if (data.code == "not") {
+			            if (data.code === "not") {
 			                $("#pwd1").html("<strong style=\"color: red\">与原密码不相同</strong>");
 			                cha.f1 = 0;
-			            } else if(data.code == "same") {
+			            } else if(data.code === "same") {
 			                $("#pwd1").html("<strong style=\"color: greenyellow\"> OK</strong>");
 			                cha.f1 = 1;
 			            }
@@ -81,10 +81,10 @@ var cha = new Vue({
 			}
 		},
 		inputpwd2 : function() {
-			if (this.pwd2 == "") {
+			if (this.pwd2 === "") {
 			    $("#pwd2").html("<strong style=\"color: red\">  不能为空</strong>");
 			    this.f2 = 0;
-			}else if (this.pwd2 == this.pwd1) {
+			}else if (this.pwd2 === this.pwd1) {
 			    $("#pwd2").html("<strong style=\"color: red\">  不能与原密码相同</strong>");
 			    this.f2 = 0;
 			} else {
@@ -102,7 +102,7 @@ var cha = new Vue({
 			}
 		},
 		plan1 : function() {
-			if (this.pwd1 == "" || this.pwd2 == "" || this.pwd3 == "") {
+			if (this.pwd1 === "" || this.pwd2 === "" || this.pwd3 === "") {
 			    $("#end").html("<strong style=\"color: red\">  不能为空</strong>");
 			} else if ((this.f1 + this.f2 + this.f3) !== 3) {
 			    $("#end").html("<strong style=\"color: red\">  请填写正确的密码</strong>");
@@ -120,10 +120,10 @@ var cha = new Vue({
 				    },
 				    dataType : "JSON",
 					success : function (data) {
-					    if (data.code == "change") {
+					    if (data.code === "change") {
 					        alert("修改成功, 请重新登录");
 							location.reload();
-					    } else if(data.code == "notchange") {
+					    } else if(data.code === "notchange") {
 					        alert("修改失败");
 					    }
 					},
